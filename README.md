@@ -7,3 +7,4 @@ Configuração de ambiente:
  - Para interação com as paginas web: pip install selenium
  - Para gerenciamento dos web drivers: pip install webdriver-manager  
  - Para geração de massa de dados: pip install Faker
+
