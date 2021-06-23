@@ -9,6 +9,7 @@ from src.page.authentication.envio_page import EnvioPage
 from src.page.authentication.pagamento_page import PagamentoPage
 from src.util.ler_arquivo import LerArquivo
 from src.util.data_hora import DataHora
+import HtmlTestRunner
 import unittest
 
 
@@ -74,4 +75,4 @@ class TestLoja(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output=LerArquivo().parametros_report().defaults().get('dirlog')))
